@@ -1,35 +1,37 @@
 import { Mail,MoveUpRight,Linkedin,Github,Copyright } from "lucide-react"
 import ContactCard from "../UI/ContactCard"
 
-export default function Contact() {
+import { useContactAnimate } from "../Animations/ContactAnimation"
 
+export default function Contact() {
+  useContactAnimate();
   return (
     <>
       <div className='h-[72vw] w-full bg-[rgb(242,240,237)] pt-[8vw]'>
          <div className="w-full  h-[38vw]  text-center ">
-            <p className="text-blue-700 font-light font-sans text-[1.5vw] ">GET  IN  TOUCH</p>
-            <h1 className="text-[4.5vw] font-bold">Let's create something</h1>
-            <h1 className="text-[4.5vw] font-bold mb-[2vw]">meaningful together</h1>
-            <p className="text-[1.2vw] font-light text-[rgb(105,104,104)]">I'm always open to discussing new projects, creative ideas, or opportunities to be part</p>
-            <p className="text-[1.2vw] font-light text-[rgb(105,104,104)]">of something great.</p>
+            <p className="ContactAnimation text-blue-700 font-light font-sans text-[1.5vw] ">GET  IN  TOUCH</p>
+            <h1 className="ContactAnimation text-[4.5vw] font-bold">Let's create something</h1>
+            <h1 className="ContactAnimation text-[4.5vw] font-bold mb-[2vw]">meaningful together</h1>
+            <p className="ContactAnimation text-[1.2vw] font-light text-[rgb(105,104,104)]">I'm always open to discussing new projects, creative ideas, or opportunities to be part</p>
+            <p className="ContactAnimation text-[1.2vw] font-light text-[rgb(105,104,104)]">of something great.</p>
 
             <ContactCard />
 
             <div className="justify-center flex gap-[3vw]  text-[1.2vw] text-[rgb(105,104,104)] mt-[1.5vw] ">
 
-              <div className="flex gap-[1vw] ">
+              <div className="ContactAnimation flex gap-[1vw] ">
                 <div><Mail className="size-[1.4vw]" /></div>
                 <p>sdeb71182@gmail.com</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
 
-              <div className="flex gap-[1vw]">
+              <div className="ContactAnimation flex gap-[1vw]">
                 <div className="flex "><Github className="size-[1.4vw]" /></div>
                 <p>@debsarkar</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
 
-              <div className="flex gap-[1vw]">
+              <div className="ContactAnimation flex gap-[1vw]">
                 <div className="flex "><Linkedin className="size-[1.4vw]" /></div>
                 <p>Deb Sarkar</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
