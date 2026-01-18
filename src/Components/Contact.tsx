@@ -40,13 +40,13 @@ export default function Contact() {
             <br />
             <hr/> 
 
-            <div className="flex justify-between font-extralight text-[1vw] text-[rgb(145,102,102)] ml-[8vw] mr-[8vw] mt-[2vw]">
+            <div className="ContactAnimation flex justify-between font-extralight text-[1vw] text-[rgb(145,102,102)] ml-[8vw] mr-[8vw] mt-[2vw]">
               <div className="flex gap-[0.4vw]">
                 <div className="mt-[0.2vw]"><Copyright className="size-[1vw]"/></div>
                 <p>2026 Deb Sarkar. All rights reserved.</p>
               </div>
                 
-              <div className="flex gap-[0.3vw] ">
+              <div className="ContactAnimation flex gap-[0.3vw] ">
                 <p>Build With</p>
                 <p className="text-[rgb(212,175,55)] ">React</p>
 

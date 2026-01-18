@@ -17,6 +17,7 @@ export const useNavAnimate = () =>{
       duration:1,
       ease: "power3.out",
       stagger:0.12,
+
     }
   )
   })
