@@ -19,34 +19,34 @@ export default function Contact() {
 
             <div className="justify-center flex gap-[3vw]  text-[1.2vw] text-[rgb(105,104,104)] mt-[1.5vw] ">
 
-              <div className="ContactAnimation flex gap-[1vw] ">
+              <div className=" ContactAnimation flex gap-[1vw] ">
                 <div><Mail className="size-[1.4vw]" /></div>
-                <p>sdeb71182@gmail.com</p>
+                <p className="hover:text-blue-800 cursor-pointer ">sdeb71182@gmail.com</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
 
-              <div className="ContactAnimation flex gap-[1vw]">
+              <div className=" ContactAnimation flex gap-[1vw]">
                 <div className="flex "><Github className="size-[1.4vw]" /></div>
-                <p>@debsarkar</p>
+                <p className="hover:text-blue-800 cursor-pointer">@debsarkar</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
 
               <div className="ContactAnimation flex gap-[1vw]">
                 <div className="flex "><Linkedin className="size-[1.4vw]" /></div>
-                <p>Deb Sarkar</p>
+                <p className="hover:text-blue-800 cursor-pointer">Deb Sarkar</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
             </div>
             <br />
             <hr/> 
 
-            <div className="ContactAnimation flex justify-between font-extralight text-[1vw] text-[rgb(145,102,102)] ml-[8vw] mr-[8vw] mt-[2vw]">
+            <div className=" ContactAnimation flex justify-between font-extralight text-[1vw] text-[rgb(145,102,102)] ml-[8vw] mr-[8vw] mt-[2vw]">
               <div className="flex gap-[0.4vw]">
                 <div className="mt-[0.2vw]"><Copyright className="size-[1vw]"/></div>
                 <p>2026 Deb Sarkar. All rights reserved.</p>
               </div>
                 
-              <div className="ContactAnimation flex gap-[0.3vw] ">
+              <div className=" ContactAnimation flex gap-[0.3vw] ">
                 <p>Build With</p>
                 <p className="text-[rgb(212,175,55)] ">React</p>
 

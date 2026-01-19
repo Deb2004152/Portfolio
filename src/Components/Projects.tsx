@@ -1,5 +1,5 @@
 import { useProjectAnimate } from "../Animations/ProjectsAnimation"
-
+import { ExternalLink , Github} from "lucide-react"
 import netflix from "../Images/netflix.png"
 import game from "../Images/game.png"
 import  weather from "../Images/weather.png"
@@ -16,7 +16,7 @@ export default function Projects() {
          <div className="pt-[0.6vw] items-center flex flex-col gap-[2.5vw] ">
 
 
-            <div className="ProjectAnimation pt-[1.5vw] pr-[1vw] pl-[1vw] flex justify-between h-[14vw] w-[70vw] bg-[rgb(251,250,249)] border-[0.1vw] border-gray-300 ">
+            <div className="hover:bg-amber-50 hover:border-blue-400 cursor-pointer ProjectAnimation pt-[1.5vw] pr-[1vw] pl-[1vw] flex justify-between h-[14vw] w-[70vw] bg-[rgb(251,250,249)] border-[0.1vw] border-gray-300 ">
               <div className="flex flex-col gap-[1vw] h-[11vw] w-[40vw]  ">
                 <h1 className=" font-bold text-[2vw]">Netflix Clone</h1>
                 <p className="text-[rgb(111,111,111)] text-[1.1vw]">Full-featured Netflix clone showcasing dynamic content loading responsive layouts smooth navigation and modern user interface components</p>
@@ -26,10 +26,15 @@ export default function Projects() {
                   <div className="h-[2.2vw] w-[4vw] bg-[rgb(235,230,224)] text-center rounded-[2vw] font-bold">js</div>
                 </div>
               </div>
-              <div className=" h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center" style={{ backgroundImage: `url(${netflix})` }}></div>
+              <div className="group h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center " style={{ backgroundImage: `url(${netflix})` }}>
+                <div className="blog relative h-[11vw] rounded-[1vw] w-[20vw] flex justify-center pt-[3.5vw] gap-[2vw] group-hover:bg-black/40 ">
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><Github  className="size-[1.5vw] justify-self-center mt-[0.7vw]"/></div>
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
+                </div>
+              </div>
             </div>
 
-            <div className="ProjectAnimation pt-[1.5vw] pr-[1vw] pl-[1vw] flex justify-between h-[14vw] w-[70vw] bg-[rgb(251,250,249)] border-[0.1vw] border-gray-300 ">
+            <div className="hover:bg-amber-50 hover:border-blue-400  cursor-pointer ProjectAnimation pt-[1.5vw] pr-[1vw] pl-[1vw] flex justify-between h-[14vw] w-[70vw] bg-[rgb(251,250,249)] border-[0.1vw] border-gray-300 ">
               <div className="flex flex-col gap-[1vw]  h-[11vw] w-[40vw] ">
                 <h1 className=" font-bold text-[2vw]">Weather Application</h1>
                 <p className="text-[rgb(111,111,111)] text-[1.1vw]">Real-time weather data visualization with location-based forecasts and clean intuitive user interface.</p>
@@ -39,27 +44,37 @@ export default function Projects() {
                   <div className="h-[2.2vw] w-[8vw] bg-[rgb(235,230,224)] text-center rounded-[2vw] font-bold">Fetch API</div>
                 </div>
               </div>
-              <div className=" h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center" style={{ backgroundImage: `url(${weather})` }}></div>
+              <div className="group h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center " style={{ backgroundImage: `url(${weather})` }}>
+                <div className="blog relative h-[11vw] rounded-[1vw] w-[20vw] flex justify-center pt-[3.5vw] gap-[2vw] group-hover:bg-black/40 ">
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><Github  className="size-[1.5vw] justify-self-center mt-[0.7vw]"/></div>
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
+                </div>
+              </div>
             </div>
 
            
            
 
 
-            <div className="ProjectAnimation pt-[1.5vw] pr-[1vw] pl-[1vw] flex justify-between h-[14vw] w-[70vw] bg-[rgb(251,250,249)] border-[0.1vw] border-gray-300 ">
+            <div className="hover:bg-amber-50 hover:border-blue-400  cursor-pointer ProjectAnimation pt-[1.5vw] pr-[1vw] pl-[1vw] flex justify-between h-[14vw] w-[70vw] bg-[rgb(251,250,249)] border-[0.1vw] border-gray-300 ">
               <div className="flex flex-col gap-[1vw]  h-[11vw] w-[40vw]  ">
                 <h1 className=" font-bold text-[2vw]">Interactive Games</h1>
-                <p className="text-[rgb(111,111,111)] text-[1.1vw]">Collection of classic interactive games including Tic Tac Toe and Calculator with smooth animations.</p>
+                <p className="text-[rgb(111,111,111)] text-[1.1vw]">Collection of classic interactive games including Tic Tac Toe game with smooth animations.</p>
                 <div className="w-full h-[4vw]  flex gap-[1vw] text-[1.2vw] ">
                   <div className="h-[2.2vw] w-[6vw] bg-[rgb(235,230,224)] text-center rounded-[2vw] font-bold">HTML</div>
                   <div className="h-[2.2vw] w-[4vw] bg-[rgb(235,230,224)] text-center rounded-[2vw] font-bold">CSS</div>
                   <div className="h-[2.2vw] w-[4vw] bg-[rgb(235,230,224)] text-center rounded-[2vw] font-bold">js</div>
                 </div>                
               </div>
-              <div className=" h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center" style={{ backgroundImage: `url(${game})` }}></div>
+              <div className="group h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center " style={{ backgroundImage: `url(${game})` }}>
+                <div className="blog relative h-[11vw] rounded-[1vw] w-[20vw] flex justify-center pt-[3.5vw] gap-[2vw] group-hover:bg-black/40 ">
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><Github  className="size-[1.5vw] justify-self-center mt-[0.7vw]"/></div>
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
+                </div>
+              </div>
             </div>
 
-            <div className="ProjectAnimation pt-[1.5vw] pr-[1vw] pl-[1vw] flex justify-between h-[14vw] w-[70vw] bg-[rgb(251,250,249)] border-[0.1vw] border-gray-300 ">
+            <div className=" hover:bg-amber-50 hover:border-blue-400  cursor-pointer ProjectAnimation pt-[1.5vw] pr-[1vw] pl-[1vw] flex justify-between h-[14vw] w-[70vw] bg-[rgb(251,250,249)] border-[0.1vw] border-gray-300 ">
               <div className="flex flex-col gap-[1.2vw]  h-[11vw] w-[40vw] ">
                 <h1 className="t font-bold text-[2vw]">Blog Application</h1>
                 <p className="text-[rgb(111,111,111)] text-[1.1vw]">A modern blog application enabling users to create edit publish and manage posts securely with authentication responsive design and comments</p>
@@ -69,7 +84,13 @@ export default function Projects() {
                   <div className="h-[2.2vw] w-[8vw] bg-[rgb(235,230,224)] text-center rounded-[2vw] font-bold">Fetch API</div>                  
                 </div>                 
               </div>
-              <div className=" h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center" style={{ backgroundImage: `url(${comment})` }}></div>
+              <div className="group  h-[11vw] w-[20vw] rounded-[1vw] bg-cover bg-center" style={{ backgroundImage: `url(${comment})` }}>
+                <div className="blog relative h-[11vw] rounded-[1vw] w-[20vw] flex justify-center pt-[3.5vw] gap-[2vw] group-hover:bg-black/60 ">
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><Github  className="size-[1.5vw] justify-self-center mt-[0.7vw]"/></div>
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
+                </div>
+                
+              </div>
             </div>
 
          </div>

@@ -17,19 +17,19 @@ export default function App() {
 
              <h2 className="HomeAnimation text-[5vw] font-extrabold">interactive web experiences.</h2>
 
-             <div className="flex gap-[1vw] font-light text-[1.5vw] mt-[1vw]">
+             <div className=" flex gap-[1vw] font-light text-[1.5vw] mt-[1vw]">
                {  TechName.map( (TechName,i)=>(
-                <p className="HomeAnimation" key={i}>{TechName}</p>
+                <p className=" HomeAnimation" key={i}>{TechName}</p>
                ))
                 }
              </div>
 
               <div className="flex gap-[2vw] pt-[2vw] text-center">
-                <div className="HomeAnimation h-[4vw] w-[10vw] pt-[1vw] rounded-[2vw] text-[1.2vw] text-white bg-[rgb(78,142,245)]">
+                <div className="hover:bg-blue-600 cursor-pointer HomeAnimation h-[4vw] w-[10vw] pt-[1vw] rounded-[2vw] text-[1.2vw] text-white bg-[rgb(78,142,245)]">
                     <p>View Projects</p>
                 </div>
 
-                <div className="HomeAnimation h-[4vw] w-[10vw] pt-[1vw] rounded-[2vw] text-[1.2vw] border-[0.1vw] border-black">
+                <div className="hover:bg-amber-100 cursor-pointer HomeAnimation h-[4vw] w-[10vw] pt-[1vw] rounded-[2vw] text-[1.2vw] border-[0.1vw] border-black">
                      <p>Get in Touch</p>
                 </div>
               </div>
@@ -37,7 +37,7 @@ export default function App() {
 
 
 
-          <div className="ScrollAnimation text-center text-[1vw]">
+          <div className="cursor-pointer ScrollAnimation text-center text-[1vw]">
             <p>SCROLL</p>
             <p>⌵</p>
           </div>

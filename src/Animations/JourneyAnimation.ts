@@ -3,10 +3,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export const useProjectAnimate = () =>{
+export const useJournayAnimate = () =>{
   
   useGSAP( ()=>{
-  gsap.fromTo(".ProjectAnimation",
+  gsap.fromTo(".JourneyAnimation",
     {
       y:10,
       autoAlpha:0,
@@ -19,10 +19,10 @@ export const useProjectAnimate = () =>{
       ease: "power3.out",
       stagger:0.12,
       scrollTrigger: {
-      trigger: ".ProjectAnimation",
+      trigger: ".JourneyAnimation",
       scroller:"body",
       // markers: true,
-      start:"top 70%",
+      start:"top 65%",
       scrub:5
   },
     }

@@ -19,7 +19,7 @@ export default function ContactCard() {
 
         <div><input type="text" placeholder="Message :" className="ContactAnimation outline-none border-[rgb(198,198,198)]  pb-[6vw] pl-[1vw] border-[0.1vw] mt-[1.2vw] h-[10vw] w-[66vw] bg-white"/></div>
 
-        <div className=" ContactAnimation bg-white border-[rgb(198,198,198)] pt-[0.5vw] justify-self-center border-[0.1vw] rounded-[2vw] mt-[1.5vw] text-center h-[3vw] w-[15vw] font-sans font-[1.2vw]"><p>Send Messege</p></div>
+        <div className="hover:border-blue-400 hover:bg-amber-50 cursor-pointer ContactAnimation bg-white border-[rgb(198,198,198)] pt-[0.5vw] justify-self-center border-[0.1vw] rounded-[2vw] mt-[1.5vw] text-center h-[3vw] w-[15vw] font-sans font-[1.2vw]"><p>Send Messege</p></div>
 
       </div>
     </>

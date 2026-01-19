@@ -5,8 +5,8 @@ import { useNavAnimate} from "../Animations/NavAnimation"
 
 export default function Navbar() {
   useNavAnimate();
-  const NavElements=["Home","About","skills","Projects","Journey","contact "]
-
+  const NavElements=["Home","About","Skills","Projects","Journey","Contact "]
+  // const NavIds = ["#Home","#About","#Skills","#Projects","#Journey","#Contact "]
   return (
     <>
       <div className="w-full bg-white text-[rgb(18,18,47)] h-[5vw] 
@@ -17,12 +17,12 @@ export default function Navbar() {
 
          <div className="text-[1.5vw] font-bold"><p>Mr. Deb</p></div>
 
-         <div className="flex gap-[2vw] text-red-800 ">
+         <div className="flex gap-[2vw] text-red-800 cursor-pointer  ">
 
            <div className="flex gap-[2vw]">
             {
              NavElements.map( (NavElements,i)=> (
-              <p className="NavAnimation" key={i}>{NavElements}</p>
+              <p  className="NavAnimation hover:text-[rgb(37,99,235)]" key={i}>{NavElements}</p>
              ))
             }
            </div>
