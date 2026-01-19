@@ -2,12 +2,17 @@ import { Mail,MoveUpRight,Linkedin,Github,Copyright } from "lucide-react"
 import ContactCard from "../UI/ContactCard"
 
 import { useContactAnimate } from "../Animations/ContactAnimation"
+import { useSelector } from "react-redux";
+import type { RootState } from "../Store";
 
 export default function Contact() {
+
+  const theme = useSelector((state :RootState)=>state.theme.value);
+
   useContactAnimate();
   return (
     <>
-      <div className='h-[72vw] w-full bg-[rgb(242,240,237)] pt-[8vw]'>
+      <div className={` h-[72vw] w-full pt-[8vw] ${theme==="light"?"bg-[rgb(242,240,237)]":"bg-[rgb(17,24,45)]"} `}>
          <div className="w-full  h-[38vw]  text-center ">
             <p className="ContactAnimation text-blue-700 font-light font-sans text-[1.5vw] ">GET  IN  TOUCH</p>
             <h1 className="ContactAnimation text-[4.5vw] font-bold">Let's create something</h1>

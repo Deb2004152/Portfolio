@@ -1,13 +1,18 @@
 import { useJournayAnimate } from "../Animations/JourneyAnimation"
 
+import { useSelector } from "react-redux";
+import type { RootState } from "../Store";
+
 export default function Journey() {
+
+  const theme = useSelector((state :RootState)=>state.theme.value);
 
   useJournayAnimate();
 
   return (
   
     <>
-      <div className="w-full h-[80vw] bg-[rgb(247,245,243)] ">
+      <div className={` w-full h-[80vw] ${theme==="light"?"bg-[rgb(247,245,243)]":"bg-[rgb(11,17,32)]"} `}>
         <h1 className="JourneyAnimation text-center font-extralight font-sans pt-[5vw] text-[2vw] pb-[2.5vw]">My Programming Journey</h1>
         
         <div className=" h-[16vw] w-full flex flex-col ">

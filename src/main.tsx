@@ -9,14 +9,21 @@ import Contact from './Components/Contact.tsx'
 import Navbar from './UI/Navbar.tsx'
 import Journey from './Components/Journey.tsx'
 
+import {store} from  './Store.ts'
+import { Provider } from 'react-redux'
+
+
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Navbar />
-    <App />
-    <About />
-    <Skills />
-    <Projects />
-    <Journey />
-    <Contact />
+    <Provider store={store}>
+      <Navbar />
+      <App />
+      <About />
+      <Skills />
+      <Projects />
+      <Journey />
+      <Contact />
+    </Provider>
   </StrictMode>,
 )

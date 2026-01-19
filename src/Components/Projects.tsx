@@ -5,11 +5,17 @@ import game from "../Images/game.png"
 import  weather from "../Images/weather.png"
 import comment from "../Images/comment.png"
 
+import { useSelector } from "react-redux";
+import type { RootState } from "../Store";
+
 export default function Projects() {
+
+  const theme = useSelector((state :RootState)=>state.theme.value);
+
   useProjectAnimate();
   return (
     <>
-      <div className=" h-[80vw] w-full bg-[rgb(242,240,237)]">
+      <div className={` h-[80vw] w-full ${theme==="light"?"bg-[rgb(242,240,237)]":"bg-[rgb(17,24,45)]"}`}>
          <h1 className="ProjectAnimation pt-[4.7vw] font-sans text-[2vw] font-light ml-[14.5vw] text-blue-800 ">My Projects</h1>
          <p className="ProjectAnimation font-extrabold text-[rgb(33,33,33)] text-[2.5vw] ml-[14.5vw] mt-[1vw] mb-[1vw]">Projects that showcase my Work</p>
 
