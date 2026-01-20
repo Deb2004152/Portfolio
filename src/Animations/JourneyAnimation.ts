@@ -3,31 +3,35 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export const useJournayAnimate = () =>{
-  
-  useGSAP( ()=>{
-  gsap.fromTo(".JourneyAnimation",
-    {
-      y:10,
-      autoAlpha:0,
-     
-    },
-    {
-      y:0,
-      autoAlpha:1,
-      duration:1.2,
-      ease: "power3.out",
-      stagger:0.12,
-      scrollTrigger: {
-      trigger: ".JourneyAnimation",
-      scroller:"body",
-      // markers: true,
-      start:"top 65%",
-      scrub:5
-  },
-    }
-  )
-  })
+export const useJournayAnimate = () => {
 
-}
+  useGSAP(() => {
 
+    gsap.utils.toArray<HTMLElement>(".JourneyAnimation").forEach((el) => {
+      gsap.fromTo(
+        el,
+        {
+          y: 50,
+          scale: 0.95,
+          autoAlpha: 0,
+        },
+        {
+          y: 0,
+          scale: 1,
+          autoAlpha: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            scroller: "body",
+            start: "top 85%",    
+            end: "bottom 40%",  
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+
+  });
+
+};

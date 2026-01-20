@@ -14,38 +14,38 @@ export default function Contact() {
     <>
       <div className={` h-[72vw] w-full pt-[8vw] ${theme==="light"?"bg-[rgb(242,240,237)]":"bg-[rgb(17,24,45)]"} `}>
          <div className="w-full  h-[38vw]  text-center ">
-            <p className="ContactAnimation text-blue-700 font-light font-sans text-[1.5vw] ">GET  IN  TOUCH</p>
-            <h1 className="ContactAnimation text-[4.5vw] font-bold">Let's create something</h1>
-            <h1 className="ContactAnimation text-[4.5vw] font-bold mb-[2vw]">meaningful together</h1>
-            <p className="ContactAnimation text-[1.2vw] font-light text-[rgb(105,104,104)]">I'm always open to discussing new projects, creative ideas, or opportunities to be part</p>
-            <p className="ContactAnimation text-[1.2vw] font-light text-[rgb(105,104,104)]">of something great.</p>
+            <p className={` ContactAnimation  font-light font-sans text-[1.5vw] ${theme==="light"?"text-blue-700":"text-sky-400"}`}>GET  IN  TOUCH</p>
+            <h1 className={` ContactAnimation text-[4.5vw] font-bold ${theme==="light"?"text-black":"text-gray-200"} `}>Let's create something</h1>
+            <h1 className={` ContactAnimation text-[4.5vw] font-bold mb-[2vw] ${theme==="light"?"text-black":"text-gray-200"} `}>meaningful together</h1>
+            <p  className={` ContactAnimation text-[1.2vw] font-light  ${theme==="light"?"text-[rgb(105,104,104)]":"text-gray-400"}`}>I'm always open to discussing new projects, creative ideas, or opportunities to be part</p>
+            <p  className={` ContactAnimation text-[1.2vw] font-light  ${theme==="light"?"text-[rgb(105,104,104)]":"text-gray-400"}`}>of something great.</p>
 
             <ContactCard />
 
-            <div className="justify-center flex gap-[3vw]  text-[1.2vw] text-[rgb(105,104,104)] mt-[1.5vw] ">
+            <div className={` justify-center flex gap-[3vw]  text-[1.2vw]  mt-[1.5vw] ${theme==="light"?"text-[rgb(105,104,104)]":"text-gray-400"}`}>
 
               <div className=" ContactAnimation flex gap-[1vw] ">
                 <div><Mail className="size-[1.4vw]" /></div>
-                <p className="hover:text-blue-800 cursor-pointer ">sdeb71182@gmail.com</p>
+                <p className={`  cursor-pointer ${theme==="light"?"hover:text-blue-800 text-[rgb(105,104,104)] ":"hover:text-sky-400"}`}>sdeb71182@gmail.com</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
 
               <div className=" ContactAnimation flex gap-[1vw]">
                 <div className="flex "><Github className="size-[1.4vw]" /></div>
-                <p className="hover:text-blue-800 cursor-pointer">@debsarkar</p>
+                <p className={` cursor-pointer ${theme==="light"?"hover:text-blue-800 text-[rgb(105,104,104)] ":"hover:text-sky-400"}`}>@debsarkar</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
 
               <div className="ContactAnimation flex gap-[1vw]">
                 <div className="flex "><Linkedin className="size-[1.4vw]" /></div>
-                <p className="hover:text-blue-800 cursor-pointer">Deb Sarkar</p>
+                <p className={` cursor-pointer ${theme==="light"?"hover:text-blue-800 text-[rgb(105,104,104)] ":"hover:text-sky-400"}`}>Deb Sarkar</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
             </div>
             <br />
             <hr/> 
 
-            <div className=" ContactAnimation flex justify-between font-extralight text-[1vw] text-[rgb(145,102,102)] ml-[8vw] mr-[8vw] mt-[2vw]">
+            <div className={` ContactAnimation flex justify-between font-extralight text-[1vw]  ml-[8vw] mr-[8vw] mt-[2vw] ${theme==="light"?"text-[rgb(145,102,102)]":"text-gray-400"} `}>
               <div className="flex gap-[0.4vw]">
                 <div className="mt-[0.2vw]"><Copyright className="size-[1vw]"/></div>
                 <p>2026 Deb Sarkar. All rights reserved.</p>

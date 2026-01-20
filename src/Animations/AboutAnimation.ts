@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const useAboutAnimate = () => {
+
   useGSAP(() => {
     gsap.fromTo(
       ".AboutAnimation",
@@ -28,4 +29,5 @@ export const useAboutAnimate = () => {
       }
     );
   });
+
 };
