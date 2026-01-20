@@ -11,7 +11,7 @@ export const useContactAnimate = () => {
       gsap.fromTo(
         el,
         {
-          y: 22,           
+          y: 10,           
           autoAlpha: 0,
         },
         {

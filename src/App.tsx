@@ -1,5 +1,5 @@
 import { useHomeAnimate,useScrollAnimate } from "./Animations/HomeAnimation"
-
+import { scrollToSection } from "./Animations/NavAnimation";
 import { useSelector } from "react-redux";
 import type { RootState } from "../Store";
 
@@ -28,11 +28,11 @@ export default function App() {
              </div>
 
               <div className="flex gap-[2vw] pt-[2vw] text-center">
-                <div className={`  ${theme==="light"?"hover:bg-blue-600 text-white bg-[rgb(78,142,245)]":"hover:bg-amber-200 text-black bg-amber-100"} cursor-pointer HomeAnimation h-[4vw] w-[10vw] pt-[1vw] rounded-[2vw] text-[1.2vw]  `}>
+                <div onClick={() => scrollToSection("projects")}  className={` ${theme==="light"?"hover:bg-blue-600 text-white bg-[rgb(78,142,245)]":"hover:bg-amber-200 text-black bg-amber-100"} cursor-pointer HomeAnimation h-[4vw] w-[10vw] pt-[1vw] rounded-[2vw] text-[1.2vw]  `}>
                     <p>View Projects</p>
                 </div>
 
-                <div className={` ${theme==="light"?"text-black border-black":"text-gray-200 border-gray-200 "} cursor-pointer HomeAnimation h-[4vw] w-[10vw] pt-[1vw] rounded-[2vw] text-[1.2vw] border-[0.1vw]  `}>
+                <div onClick={() => scrollToSection("contact")} className={` ${theme==="light"?"text-black border-black":"text-gray-200 border-gray-200 "} cursor-pointer HomeAnimation h-[4vw] w-[10vw] pt-[1vw] rounded-[2vw] text-[1.2vw] border-[0.1vw]  `}>
                      <p>Get in Touch</p>
                 </div>
               </div>
@@ -40,7 +40,7 @@ export default function App() {
 
 
 
-          <div className={` cursor-pointer ScrollAnimation text-center text-[1vw] ${theme==="light"?"text-black hover:text-blue-600":"text-amber-100 hover:text-amber-200"}`}>
+          <div onClick={() => scrollToSection("about")} className={` cursor-pointer ScrollAnimation text-center text-[1vw] ${theme==="light"?"text-black hover:text-blue-600":"text-amber-100 hover:text-amber-200"}`}>
             <p>SCROLL</p>
             <p>⌵</p>
           </div>

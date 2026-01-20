@@ -12,7 +12,7 @@ export default function Contact() {
   useContactAnimate();
   return (
     <>
-      <div className={` h-[72vw] w-full pt-[8vw] ${theme==="light"?"bg-[rgb(242,240,237)]":"bg-[rgb(17,24,45)]"} `}>
+      <div className={` h-[72vw] w-full pt-[6vw] ${theme==="light"?"bg-[rgb(242,240,237)]":"bg-[rgb(17,24,45)]"} `}>
          <div className="w-full  h-[38vw]  text-center ">
             <p className={` ContactAnimation  font-light font-sans text-[1.5vw] ${theme==="light"?"text-blue-700":"text-sky-400"}`}>GET  IN  TOUCH</p>
             <h1 className={` ContactAnimation text-[4.5vw] font-bold ${theme==="light"?"text-black":"text-gray-200"} `}>Let's create something</h1>
