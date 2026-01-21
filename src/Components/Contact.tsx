@@ -26,19 +26,19 @@ export default function Contact() {
 
               <div className=" ContactAnimation flex gap-[1vw] ">
                 <div><Mail className="size-[1.4vw]" /></div>
-                <p className={`  cursor-pointer ${theme==="light"?"hover:text-blue-800 text-[rgb(105,104,104)] ":"hover:text-sky-400"}`}>sdeb71182@gmail.com</p>
+                <p onClick={()=>window.open("https://mail.google.com/mail/u/0/#sent?compose=CllgCJlFDFNWNfDlzZwTxJDQRqhCXgxSxBMDGvMVSNKlJFBfgQHWSfsxNHmjdDsGvdMzBbnnRzL")}className={`  cursor-pointer ${theme==="light"?"hover:text-blue-800 text-[rgb(105,104,104)] ":"hover:text-sky-400"}`}>sdeb71182@gmail.com</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
 
               <div className=" ContactAnimation flex gap-[1vw]">
                 <div className="flex "><Github className="size-[1.4vw]" /></div>
-                <p className={` cursor-pointer ${theme==="light"?"hover:text-blue-800 text-[rgb(105,104,104)] ":"hover:text-sky-400"}`}>@debsarkar</p>
+                <p onClick={()=>{window.open("https://github.com/Deb2004152")}} className={` cursor-pointer ${theme==="light"?"hover:text-blue-800 text-[rgb(105,104,104)] ":"hover:text-sky-400"}`}>@debsarkar</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
 
               <div className="ContactAnimation flex gap-[1vw]">
                 <div className="flex "><Linkedin className="size-[1.4vw]" /></div>
-                <p className={` cursor-pointer ${theme==="light"?"hover:text-blue-800 text-[rgb(105,104,104)] ":"hover:text-sky-400"}`}>Deb Sarkar</p>
+                <p onClick={()=>window.open("https://www.linkedin.com/in/deb-sarkar-7b6ab8306/")}className={` cursor-pointer ${theme==="light"?"hover:text-blue-800 text-[rgb(105,104,104)] ":"hover:text-sky-400"}`}>Deb Sarkar</p>
                 <div><MoveUpRight className="size-[1.4vw]" /></div>
               </div>
             </div>
