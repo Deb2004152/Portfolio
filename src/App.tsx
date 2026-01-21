@@ -1,12 +1,12 @@
 import { useHomeAnimate,useScrollAnimate } from "./Animations/HomeAnimation"
 import { scrollToSection } from "./Animations/NavAnimation";
 import { useSelector } from "react-redux";
-import type { RootState } from "../Store";
+import type { RootState } from "../src/Store";
 
 export default function App() {
   useHomeAnimate();
   useScrollAnimate();
-  const TechName = ["Frontend Developer","|","React","Animations","|","Animations","|","UI Engineering"]
+  const TechName = ["Frontend Developer","|","React JS","|","Type Script","|","UI Animations"]
 
   const theme = useSelector((state :RootState)=>state.theme.value);
   return (

@@ -3,3 +3,11 @@
 html {
   scroll-padding-top: 6vw;
 }
+
+.resume-select {
+  appearance: none;         /* Chrome, Edge */
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none;    /* Firefox */
+
+  background: transparent; /* removes arrow background */
+}

@@ -43,9 +43,9 @@ export default function Contact() {
               </div>
             </div>
             <br />
-            <hr/> 
+            <hr className={` ${theme==="light"?"text-black":"text-gray-500"}`}/> 
 
-            <div className={` ContactAnimation flex justify-between font-extralight text-[1vw]  ml-[8vw] mr-[8vw] mt-[2vw] ${theme==="light"?"text-[rgb(145,102,102)]":"text-gray-400"} `}>
+            <div className={` ContactAnimation flex justify-between font-extralight text-[1vw]  ml-[8vw] mr-[8vw] mt-[3vw] ${theme==="light"?"text-[rgb(145,102,102)]":"text-gray-400"} `}>
               <div className="flex gap-[0.4vw]">
                 <div className="mt-[0.2vw]"><Copyright className="size-[1vw]"/></div>
                 <p>2026 Deb Sarkar. All rights reserved.</p>
