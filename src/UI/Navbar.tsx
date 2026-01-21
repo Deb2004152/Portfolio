@@ -18,7 +18,7 @@ export default function Navbar() {
 
         <div className="text-[1.5vw] font-bold flex justify-between gap-[2vw]">
           <p>Mr. Deb</p>
-          <div onClick={()=>window.open("Resume.pdf","_blank")}className={` text-[1.2vw] pl-[0.2vw] pt-[0.2vw]  rounded-[2vw] size-[2.3vw] cursor-pointer ${theme==="light"?"bg-amber-200 text-black ":"bg-sky-200 text-black "}`}><p>CV</p></div>
+          <div onClick={()=>window.open("/Resume.pdf","_blank")}className={` text-[1.2vw] pl-[0.2vw] pt-[0.2vw]  rounded-[2vw] size-[2.3vw] cursor-pointer ${theme==="light"?"bg-amber-200 text-black ":"bg-sky-200 text-black "}`}><p>CV</p></div>
         </div>
         
         <div className={`flex gap-[2vw] ${theme === "light" ? "text-red-800" : "text-gray-200"} cursor-pointer`}>
