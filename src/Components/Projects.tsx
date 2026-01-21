@@ -35,7 +35,7 @@ export default function Projects() {
               <div className="group h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center " style={{ backgroundImage: `url(${netflix})` }}>
                 <div className="blog relative h-[11vw] rounded-[1vw] w-[20vw] flex justify-center pt-[3.5vw] gap-[2vw] group-hover:bg-black/40 ">
                   <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><Github onClick={()=> window.open("https://github.com/Deb2004152/Netflix.git")} className="size-[1.5vw] justify-self-center mt-[0.7vw]"/></div>
-                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink onClick={() => window.open("https://illustrious-dango-0c06e9.netlify.app/", "_blank", "noopener,noreferrer")} className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink onClick={() => window.open("https://6970e84dff560a18bbf516c7--bespoke-sunflower-92b6f0.netlify.app/", "_blank", "noopener,noreferrer")} className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function Projects() {
               <div className="group h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center " style={{ backgroundImage: `url(${weather})` }}>
                 <div className="blog relative h-[11vw] rounded-[1vw] w-[20vw] flex justify-center pt-[3.5vw] gap-[2vw] group-hover:bg-black/40 ">
                   <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><Github onClick={()=> window.open("https://github.com/Deb2004152/Weather-Application.git")} className="size-[1.5vw] justify-self-center mt-[0.7vw]"/></div>
-                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink onClick={() => window.open("https://deluxe-alfajores-9cc167.netlify.app/")} className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink onClick={() => window.open("https://roaring-daffodil-71d28b.netlify.app/")} className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function Projects() {
               <div className="group h-[11vw] w-[20vw]  rounded-[1vw] bg-cover bg-center " style={{ backgroundImage: `url(${game})` }}>
                 <div className="blog relative h-[11vw] rounded-[1vw] w-[20vw] flex justify-center pt-[3.5vw] gap-[2vw] group-hover:bg-black/40 ">
                   <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><Github onClick={()=> window.open("https://github.com/Deb2004152/Tic-Tac-Toe.git")} className="size-[1.5vw] justify-self-center mt-[0.7vw]"/></div>
-                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink onClick={() => window.open("https://elaborate-churros-e09ff6.netlify.app/")} className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink onClick={() => window.open("https://friendly-basbousa-66a579.netlify.app/")} className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function Projects() {
               <div className="group  h-[11vw] w-[20vw] rounded-[1vw] bg-cover bg-center" style={{ backgroundImage: `url(${comment})` }}>
                 <div className="blog relative h-[11vw] rounded-[1vw] w-[20vw] flex justify-center pt-[3.5vw] gap-[2vw] group-hover:bg-black/60 ">
                   <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><Github onClick={()=> window.open("https://github.com/Deb2004152/Blog-Application.git")} className="size-[1.5vw] justify-self-center mt-[0.7vw]"/></div>
-                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink onClick={() => window.open("https://sprightly-narwhal-599a76.netlify.app/")}className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
+                  <div className="size-[3vw] bg-white transition-all duration-500 opacity-0 group-hover:opacity-100 rounded-[2vw] invisible group-hover:visible "><ExternalLink onClick={() => window.open("https://6970e9372856051ca413cc38--radiant-kitten-7ea72e.netlify.app/")}className="size-[1.5vw] justify-self-center mt-[0.6vw]"/></div>
                 </div>
                 
               </div>
