@@ -10,7 +10,7 @@ export default function App() {
 
   const theme = useSelector((state :RootState)=>state.theme.value);
   return (
-    <>
+    <> 
       <div id="Home" className={` h-screen w-full ${theme==="light"?"bg-[rgb(247,245,243)]":"bg-[rgb(11,17,32)]"} `}>
           <div className="w-[89vw] h-[41vw] ml-[5vw]">
 

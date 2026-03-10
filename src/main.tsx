@@ -8,6 +8,7 @@ import Projects from './Components/Projects.tsx'
 import Contact from './Components/Contact.tsx'
 import Navbar from './UI/Navbar.tsx'
 import Journey from './Components/Journey.tsx'
+import Sidebar from './UI/Sidebar.tsx'
 
 import {store} from  './Store.ts'
 import { Provider } from 'react-redux'
@@ -19,7 +20,7 @@ createRoot(document.getElementById('root')!).render(
     <Provider store={store}>
 
       <Navbar />
-
+      <Sidebar />
       <div id="home">
         <App />
       </div>
