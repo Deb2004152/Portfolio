@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import  themeReducer  from './Features/ThemeSlice'
+import themeReducer from './Features/ThemeSlice'
+import sidebarReducer from './Features/SidebarSlice'
 
 export const store = configureStore({
   reducer: {
-     theme:themeReducer,
+     theme: themeReducer,
+     sidebar: sidebarReducer,
   },
 })
 

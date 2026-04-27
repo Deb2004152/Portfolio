@@ -12,9 +12,50 @@ export default function Journey() {
   return (
   
     <>
-      <div className={` w-full h-[80vw] ${theme==="light"?"bg-[rgb(247,245,243)]":"bg-[rgb(11,17,32)]"} `}>
-        <h1 className={` JourneyAnimation text-center font-extralight font-sans pt-[5vw] text-[2vw] pb-[2.5vw] ${theme==="light"?"text-black":"text-amber-200"}`}>My Programming Journey</h1>
+      <div className={` w-full min-h-screen lg:min-h-0 h-auto lg:h-[80vw] pb-[10vw] lg:pb-0 ${theme==="light"?"bg-[rgb(247,245,243)]":"bg-[rgb(11,17,32)]"} `}>
+        <h1 className={` JourneyAnimation text-center font-extralight font-sans pt-[12vw] lg:pt-[5vw] text-[8vw] lg:text-[2vw] pb-[8vw] lg:pb-[2.5vw] ${theme==="light"?"text-black":"text-amber-200"}`}>My Programming Journey</h1>
         
+        {/* Mobile View */}
+        <div className="flex flex-col lg:hidden w-full px-[5vw] gap-[10vw]">
+          <div className="flex flex-col gap-[3vw] JourneyAnimation">
+            <div className="flex items-center gap-[4vw]">
+              <div className={`flex justify-center items-center size-[20vw] rounded-full border-[0.5vw] ${theme==="light"?"border-black":"border-gray-100"}`}><p className={`font-extrabold text-[5vw] ${theme==="light"?"text-black":"text-gray-200"}`}>2021</p></div>
+              <p className={`font-bold text-[4.5vw] ${theme==="light"?"text-[rgb(111,111,111)]":"text-gray-400"}`}>2 years</p>
+            </div>
+            <h1 className={`text-[6vw] font-bold ${theme==="light"?"text-black":"text-gray-100"}`}>Basic programming Languages</h1>
+            <p className={`text-[4vw] ${theme==="light"?"text-black":"text-gray-400"}`}>Started my coding journey with c,c++ solving small and medium type problems and enjoying the world of coding and logic builing.</p>
+          </div>
+
+          <div className="flex flex-col gap-[3vw] JourneyAnimation">
+            <div className="flex items-center gap-[4vw]">
+              <div className={`flex justify-center items-center size-[20vw] rounded-full border-[0.5vw] ${theme==="light"?"border-black":"border-gray-100"}`}><p className={`font-extrabold text-[5vw] ${theme==="light"?"text-black":"text-gray-200"}`}>2023</p></div>
+              <p className={`font-bold text-[4.5vw] ${theme==="light"?"text-[rgb(111,111,111)]":"text-gray-400"}`}>1 year</p>
+            </div>
+            <h1 className={`text-[6vw] font-bold ${theme==="light"?"text-black":"text-gray-100"}`}>Frontend Development</h1>
+            <p className={`text-[4vw] ${theme==="light"?"text-black":"text-gray-400"}`}>Started my frontend journey with HTML, CSS, and JavaScript, building responsive layouts, adding interactivity, and understanding core web fundamentals through hands-on projects.</p>
+          </div>
+
+          <div className="flex flex-col gap-[3vw] JourneyAnimation">
+            <div className="flex items-center gap-[4vw]">
+              <div className={`flex justify-center items-center size-[20vw] rounded-full border-[0.5vw] ${theme==="light"?"border-black":"border-gray-100"}`}><p className={`font-extrabold text-[5vw] ${theme==="light"?"text-black":"text-gray-200"}`}>2024</p></div>
+              <p className={`font-bold text-[4.5vw] ${theme==="light"?"text-[rgb(111,111,111)]":"text-gray-400"}`}>1 year</p>
+            </div>
+            <h1 className={`text-[6vw] font-bold ${theme==="light"?"text-black":"text-gray-100"}`}>React Js & Redux-Toolkit</h1>
+            <p className={`text-[4vw] ${theme==="light"?"text-black":"text-gray-400"}`}>Elevated my frontend journey with React and Redux Toolkit, building scalable applications, managing global state efficiently, and mastering predictable state management.</p>
+          </div>
+
+          <div className="flex flex-col gap-[3vw] JourneyAnimation">
+            <div className="flex items-center gap-[4vw]">
+              <div className={`flex justify-center items-center size-[20vw] rounded-full border-[0.5vw] ${theme==="light"?"border-black":"border-gray-100"}`}><p className={`font-extrabold text-[5vw] ${theme==="light"?"text-black":"text-gray-200"}`}>2025</p></div>
+              <p className={`font-bold text-[4.5vw] ${theme==="light"?"text-[rgb(111,111,111)]":"text-gray-400"}`}>1 year</p>
+            </div>
+            <h1 className={`text-[6vw] font-bold ${theme==="light"?"text-black":"text-gray-100"}`}>Backend Development</h1>
+            <p className={`text-[4vw] ${theme==="light"?"text-black":"text-gray-400"}`}>Started my backend development journey with Node.js and Express, building RESTful APIs, handling SQL and MongoDB databases, and understanding server-side data flow and authentication.</p>
+          </div>
+        </div>
+
+        {/* Desktop View */}
+        <div className="hidden lg:flex flex-col w-full">
         <div className=" h-[16vw] w-full flex flex-col ">
           
            <div className={` absolute ml-[35vw] mt-[7.4vw] h-[0.1vw] w-[14vw] flex ${theme==="light"?"bg-[rgb(198,198,198)]":"bg-[rgb(90,98,140)]"}`}>
@@ -78,6 +119,7 @@ export default function Journey() {
            <div className={` h-[8vw] w-[49.6vw] border-[0.2vw] border-t-0 border-b-0 border-l-0 ${theme==="light"?"border-[rgb(198,198,198)]":"border-[rgb(90,98,140)]"}  `}>
 
            </div>
+        </div>
         </div>
 
       </div>

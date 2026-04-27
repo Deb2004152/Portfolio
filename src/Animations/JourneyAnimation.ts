@@ -25,7 +25,6 @@ export const useJournayAnimate = () => {
             trigger: el,
             scroller: "body",
             start: "top 85%",    
-            end: "bottom 40%",  
             toggleActions: "play none none reverse",
           },
         }

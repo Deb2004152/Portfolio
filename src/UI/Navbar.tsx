@@ -1,6 +1,7 @@
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Menu } from "lucide-react";
 import type { RootState } from "../Store";
 import { switchTheme } from "../Features/ThemeSlice";
+import { toggleSidebar } from "../Features/SidebarSlice";
 import { useNavAnimate, scrollToSection } from "../Animations/NavAnimation";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -79,6 +80,13 @@ export default function Navbar() {
             ) : (
               <Sun className="NavAnimation size-full" />
             )}
+          </button>
+          
+          <button
+            className="lg:hidden size-8 xs:size-18 text-center"
+            onClick={() => dispatch(toggleSidebar())}
+          >
+             <Menu className="NavAnimation size-full" />
           </button>
 
         </div>

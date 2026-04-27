@@ -11,38 +11,36 @@ export default function App() {
   const theme = useSelector((state :RootState)=>state.theme.value);
   return (
     <> 
-      <div id="Home" className={` h-screen w-full ${theme==="light"?"bg-[rgb(247,245,243)]":"bg-[rgb(11,17,32)]"} `}>
-          <div className="w-[89vw] h-[41vw] ml-[5vw]">
+      <div id="Home" className={` h-screen w-full flex flex-col pt-[10rem] lg:pt-[8rem] px-[5vw] overflow-hidden ${theme==="light"?"bg-[rgb(247,245,243)]":"bg-[rgb(11,17,32)]"} `}>
+          <div className="w-full">
 
-             <p  className={` HomeAnimation inline-block ${theme==="light"?"text-blue-500":"text-amber-200"} xs:pt-[30vw] lg:pt-[10vw] xs:pb-15 lg:pb-[2vw] xs:text-[6vw] lg:text-[1.3vw] `}>DEB SARKAR</p>
+             <p  className={` HomeAnimation inline-block ${theme==="light"?"text-blue-500":"text-amber-200"} pt-[10vw] lg:pt-[2vw] pb-[7vw] lg:pb-[2vw] text-[5vw] lg:text-[1.3vw] font-bold tracking-widest `}>DEB SARKAR</p>
 
-             <h1 className={` HomeAnimation  xs:pt-20  xs:leading-[1.2] lg:leading-0 lg:text-[5vw] xs:text-[10rem] font-extrabold ${theme==="light"?"text-black":"text-gray-200"} `}>I build thoughtful</h1>
+             <h1 className={` HomeAnimation leading-tight lg:leading-none text-[12vw] lg:text-[5vw] font-extrabold ${theme==="light"?"text-black":"text-gray-200"} `}>I build thoughtful</h1>
 
-             <h2 className={` HomeAnimation xs:pt-10 lg:pt-12  lg:text-[5vw] xs:text-[3.7rem] font-extrabold ${theme==="light"?"text-black":"text-gray-200"}`}>interactive web experiences.</h2>
+             <h2 className={` HomeAnimation pt-[5vw] lg:pt-[1vw] leading-tight lg:leading-none text-[10vw] lg:text-[5vw] font-extrabold ${theme==="light"?"text-black":"text-gray-200"}`}>interactive web experiences.</h2>
 
-             <div className={`flex gap-[1vw] font-light text-[1rem] xs:text-[1.85rem] lg:text-[1.4rem] xs:mt-40 lg:mt-[1vw] ${theme==="light"?"text-black":"text-gray-200"} `} >
+             <div className={`flex flex-wrap gap-[3vw] lg:gap-[1vw] font-light text-[4vw] lg:text-[1.4vw] mt-[10vw] lg:mt-[2vw] ${theme==="light"?"text-black":"text-gray-200"} `} >
                {  TechName.map( (TechName,i)=>(
                 <p className=" HomeAnimation" key={i}>{TechName}</p>
                ))
                 }
              </div>
 
-              <div className="flex flex-col lg:flex-row xs:gap-15 lg:gap-4 xs:justify-center lg:justify-start lg-gap-[2vw] xs:pt-25 lg:pt-[4vw] text-center">
-                <div onClick={() => scrollToSection("projects")}  className={` ${theme==="light"?"hover:bg-blue-600 text-white bg-[rgb(78,142,245)]":"hover:bg-amber-200 text-black bg-amber-100"} cursor-pointer HomeAnimation xs:h-40 lg:h-[4vw] xs:w-full lg:w-[10vw] xs:pt-10 lg:pt-[1vw] rounded-full xs:text-[3rem] lg:text-[1.2vw]  `}>
+              <div className="flex flex-col lg:flex-row gap-[5vw] lg:gap-[2vw] justify-center lg:justify-start pt-[12vw] lg:pt-[4vw] text-center w-full">
+                <div onClick={() => scrollToSection("projects")}  className={` ${theme==="light"?"hover:bg-blue-600 text-white bg-[rgb(78,142,245)]":"hover:bg-amber-200 text-black bg-amber-100"} cursor-pointer HomeAnimation flex items-center justify-center h-[15vw] lg:h-[4vw] w-full lg:w-[12vw] rounded-full text-[4.5vw] lg:text-[1.2vw] font-bold `}>
                     <p>View Projects</p>
                 </div>
 
-                <div onClick={() => scrollToSection("contact")} className={` ${theme==="light"?"text-black border-black":"text-gray-200 border-gray-200 "} cursor-pointer HomeAnimation xs:h-40 lg:h-[4vw] xs:w-full lg:w-[10vw] xs:pt-10 lg:pt-[1vw] rounded-full xs:text-[3rem] lg:text-[1.2vw] border-[0.1vw]  `}>
+                <div onClick={() => scrollToSection("contact")} className={` ${theme==="light"?"text-black border-black hover:bg-gray-100":"text-gray-200 border-gray-200 hover:bg-[rgb(28,35,58)]"} cursor-pointer HomeAnimation flex items-center justify-center h-[15vw] lg:h-[4vw] w-full lg:w-[12vw] rounded-full text-[4.5vw] lg:text-[1.2vw] border-[0.3vw] lg:border-[0.1vw] font-bold `}>
                      <p>Get in Touch</p>
                 </div>
               </div>
           </div>
 
-
-
-          <div onClick={() => scrollToSection("about")} className={` cursor-pointer xs:pt-350 lg:pt-0 ScrollAnimation text-center xs:text-[2.25rem] lg:text-[1vw] ${theme==="light"?"text-black hover:text-blue-600":"text-amber-100 hover:text-amber-200"}`}>
-            <p>SCROLL</p>
-            <p>⌵</p>
+          <div onClick={() => scrollToSection("about")} className={` cursor-pointer mt-auto pb-[8vw] lg:pb-[2vw] pt-[6vw] lg:pt-0 ScrollAnimation text-center text-[3.5vw] lg:text-[1vw] ${theme==="light"?"text-black hover:text-blue-600":"text-amber-100 hover:text-amber-200"}`}>
+            <p className="font-bold tracking-widest">SCROLL</p>
+            <p className="text-[6vw] lg:text-[1.5vw]">⌵</p>
           </div>
       </div>
     </>
