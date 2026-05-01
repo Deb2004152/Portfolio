@@ -15,7 +15,7 @@ export default function Projects() {
   useProjectAnimate();
   return (
     <>
-      <div className={` min-h-screen h-auto w-full pb-[10vw] lg:pb-0 ${theme==="light"?"bg-[rgb(242,240,237)]":"bg-[rgb(17,24,45)]"}`}>
+      <div className={` min-h-screen h-auto w-full pb-[10vw] lg:pb-10 ${theme==="light"?"bg-[rgb(242,240,237)]":"bg-[rgb(17,24,45)]"}`}>
          <h1 className={` ProjectAnimation pt-[12vw] lg:pt-[4.7vw] font-sans text-[8vw] lg:text-[2vw] font-light ml-[5vw] lg:ml-[14.5vw] ${theme==="light"?"text-black":"text-sky-300"} `}>My Projects</h1>
          <p className={` ProjectAnimation font-extrabold text-[6vw] lg:text-[2.5vw] ml-[5vw] lg:ml-[14.5vw] mt-[3vw] lg:mt-[1vw] mb-[5vw] lg:mb-[1vw] ${theme==="light"?"text-[rgb(33,33,33)]":"text-gray-200"}`}>Projects that showcase my Work</p>
 

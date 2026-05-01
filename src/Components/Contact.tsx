@@ -45,13 +45,13 @@ export default function Contact() {
             <br />
             <hr className={` ${theme==="light"?"text-black":"text-gray-500"}`}/> 
 
-            <div className={` ContactAnimation flex flex-col lg:flex-row justify-between items-center gap-[4vw] lg:gap-0 font-extralight text-[3vw] lg:text-[1vw] mt-[10vw] lg:mt-[3vw] pb-[10vw] lg:pb-0 ${theme==="light"?"text-[rgb(145,102,102)]":"text-gray-400"} `}>
+            <div className={` ContactAnimation flex flex-col lg:flex-row justify-between items-center gap-[4vw] lg:gap-0 font-extralight text-[3vw] lg:text-[1vw] mt-[10vw] lg:mt-[3vw] lg:ml-[2vw] pb-[10vw] lg:pb-0 ${theme==="light"?"text-[rgb(145,102,102)]":"text-gray-400"} `}>
               <div className="flex items-center gap-[1vw] lg:gap-[0.4vw]">
                 <div><Copyright className="size-[4vw] lg:size-[1vw]"/></div>
                 <p>2026 Deb Sarkar. All rights reserved.</p>
               </div>
                 
-              <div className=" ContactAnimation flex items-center gap-[2vw] lg:gap-[0.3vw] ">
+              <div className=" ContactAnimation flex items-center gap-[2vw] lg:mr-[2vw] lg:gap-[0.3vw] ">
                 <p>Build With</p>
                 <p className="text-[rgb(212,175,55)] ">React</p>
 

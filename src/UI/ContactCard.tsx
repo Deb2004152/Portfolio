@@ -23,7 +23,7 @@ export default function ContactCard() {
            <input type="text" placeholder="Subject :" className={` ContactAnimation outline-none h-[12vw] lg:h-[4vw] w-full lg:w-[32vw] pl-[4vw] lg:pl-[1vw] border-[0.1vw] lg:mr-[2vw] ${theme==="light"?"bg-white border-[rgb(198,198,198)] text-black":"bg-[rgb(32,38,66)] border-[rgb(60,68,110)] text-white"} `}/>
         </div>
 
-        <div><input type="text" placeholder="Message :" className={` ContactAnimation outline-none pb-[20vw] lg:pb-[6vw] pl-[4vw] lg:pl-[1vw] border-[0.1vw] mt-[5vw] lg:mt-[1.2vw] h-[30vw] lg:h-[10vw] w-full lg:w-[66vw] lg:ml-[2vw] ${theme==="light"?"bg-white border-[rgb(198,198,198)] text-black":"bg-[rgb(32,38,66)] border-[rgb(60,68,110)] text-white"} `}/></div>
+        <div><input type="text" placeholder="Message :" className={` ContactAnimation outline-none  pb-[20vw] lg:pb-[6vw] pl-[4vw] lg:pl-[1vw] border-[0.1vw] mt-[5vw] lg:mt-[1.2vw] h-[30vw] lg:h-[10vw] w-full lg:w-[66vw] lg:ml-[0.1vw] ${theme==="light"?"bg-white border-[rgb(198,198,198)] text-black":"bg-[rgb(32,38,66)] border-[rgb(60,68,110)] text-white"} `}/></div>
 
         <div className={` cursor-pointer ContactAnimation pt-[3vw] lg:pt-[0.5vw] justify-self-center border-[0.1vw] rounded-[6vw] lg:rounded-[2vw] mt-[8vw] lg:mt-[1.5vw] text-center h-[12vw] lg:h-[3vw] w-[40vw] lg:w-[15vw] font-sans text-[4vw] lg:text-[1.2vw] ${theme==="light"?"hover:border-blue-400 bg-white text-black border-[rgb(198,198,198)]":"hover:border-amber-200 text-gray-200 border-gray-200"} `}><p>Send Messege</p></div>
 
